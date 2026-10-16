@@ -12,7 +12,7 @@
 
 > **from $0.015 per image** (region-edit $0.015) — 一个 OpenAI 兼容端点 `https://api.apimart.ai/v1`，无需包月套餐。*(数据观测于 2026-10-12)*
 
-**[获取 API Key](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-keys)** · **[实时价格](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-pricing)** · **[模型页面](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-model)** · [⚡ 60 秒快速上手](#quickstart)
+**[获取 API Key](https://go.apimart.ai/k-df4346)** · **[实时价格](https://go.apimart.ai/k-32bc67)** · **[模型页面](https://go.apimart.ai/k-ad8864)** · [⚡ 60 秒快速上手](#quickstart)
 
 **为什么团队通过 APIMart 调用 Grok Imagine 2.0（`grok-imagine-2.0-ext`）**
 
@@ -31,7 +31,7 @@ Grok Imagine 2.0 is xAI's image generation and region-edit model, served per ima
 
 | Route | `model` value | Billing | Notes |
 | --- | --- | --- | --- |
-| Per-image | `grok-imagine-2.0-ext` | per delivered image, by resolution | see the [model page](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-model) for the exact tiers |
+| Per-image | `grok-imagine-2.0-ext` | per delivered image, by resolution | see the [model page](https://go.apimart.ai/k-ad8864) for the exact tiers |
 
 Endpoint: `POST https://api.apimart.ai/v1/images/generations`, then poll `GET /v1/tasks/{task_id}`.
 
@@ -46,7 +46,7 @@ Endpoint: `POST https://api.apimart.ai/v1/images/generations`, then poll `GET /v
 
 <!-- pricing:model:end -->
 
-Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-pricing) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
+Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-32bc67) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
 
 ## Request parameters
 
@@ -60,7 +60,7 @@ Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-grok-i
 | `image_urls` | string[] | — | reference images as public HTTP(S) URLs or base64 data URLs |
 | `nsfw_check` | boolean | `false` | runs `omni-moderation-latest` before submitting |
 
-The table lists the fields accepted by the APIMart `images/generations` endpoint. Check the [model page](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-model) for anything this model adds on top.
+The table lists the fields accepted by the APIMart `images/generations` endpoint. Check the [model page](https://go.apimart.ai/k-ad8864) for anything this model adds on top.
 
 ## Quickstart
 
@@ -103,15 +103,26 @@ Runnable versions: [`examples/`](examples). The task lifecycle is `pending → p
 
 **How do I get a key?**
 
-Use the [Get an API key](https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-keys) link — $1 minimum top-up, no plan required.
+Use the [Get an API key](https://go.apimart.ai/k-df4346) link — $1 minimum top-up, no plan required.
+
+<!-- related-repos:auto -->
+## Related repositories
+
+- **Same model, this language** — the other half of this pair: [grok-imagine-2-0-prompts-cn](https://github.com/q7zvwq45nz481l/grok-imagine-2-0-prompts-cn)
+- **Same model, other languages** — 9 more language builds: Deutsch `grok-imagine-2-0-api-de` · Español `grok-imagine-2-0-api-es` · Français `grok-imagine-2-0-api-fr` · Relay/gateway `grok-imagine-2-0-api-gateway` · Bahasa [grok-imagine-2-0-api-id](https://github.com/pqwyoiqhp/grok-imagine-2-0-api-id) · 日本語 [grok-imagine-2-0-api-ja](https://github.com/yx0gie/grok-imagine-2-0-api-ja) · 한국어 `grok-imagine-2-0-api-ko` · Português [grok-imagine-2-0-api-pt](https://github.com/et3yo6leiak/grok-imagine-2-0-api-pt) · Русский [grok-imagine-2-0-api-ru](https://github.com/c3lmgfyau8zz/grok-imagine-2-0-api-ru)
+- **More models in this language** — [midjourney-api-cn](https://github.com/apimartycl6k972t/midjourney-api-cn) · [gemini-2-5-flash-image-preview-api-cn](https://github.com/hm-5j/gemini-2-5-flash-image-preview-api-cn) · [nano-banana-api-cn](https://github.com/mpflv/nano-banana-api-cn) · [gemini-3-1-flash-image-preview-api-cn](https://github.com/utp00/gemini-3-1-flash-image-preview-api-cn) · [nano-banana-2-api-cn](https://github.com/i3hxnu6/nano-banana-2-api-cn) · [gemini-3-pro-image-preview-api-cn](https://github.com/vd0tv42d/gemini-3-pro-image-preview-api-cn)
+- **Topic hubs** — every build of this model, all languages: [grok-imagine-2-0](https://github.com/topics/grok-imagine-2-0) · [grok-imagine-2-0-api](https://github.com/topics/grok-imagine-2-0-api)
+
+This repository is one build in a cross-linked set of API guides for the same model family; each language build links back to the others.
+<!-- /related-repos:auto -->
 
 ## Attributed links (how this repository is measured)
 
 | Purpose | Attributed link | Target |
 | --- | --- | --- |
-| Model page | <https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-model> | `apimart.ai/zh/model/grok-imagine-2-0` |
-| Live pricing | <https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-pricing> | `apimart.ai/zh/pricing` |
-| Get an API key | <https://go.apimart.ai/k-PENDING-grok-imagine-2-0-api-cn-keys> | `apimart.ai/zh/keys` |
+| Model page | <https://go.apimart.ai/k-ad8864> | `apimart.ai/zh/model/grok-imagine-2-0` |
+| Live pricing | <https://go.apimart.ai/k-32bc67> | `apimart.ai/zh/pricing` |
+| Get an API key | <https://go.apimart.ai/k-df4346> | `apimart.ai/zh/keys` |
 
 Outbound APIMart links are minted through the promo link API; hand-made tracking parameters are rejected by
 `tools/check_links.py` in CI.
